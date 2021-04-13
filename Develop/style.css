@@ -78,41 +78,5 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-.empty {
-  display: grid;
-  grid-area: empty;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-.planes {
-  grid-area: planes;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-transform: uppercase;
-  background-color: blanchedalmond;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-top: 1px solid;
-}
-.planes > div {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  border-right: 1px solid black;
-}
-.times {
-  grid-area: time;
-  display: grid;
-  grid-template-rows: repeat(9, 1fr);
-  font-size: 14px;
-  background-color:grey;
-  border-left: 1px solid black;
-}
-.time > div {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid black;
-}
 
 
