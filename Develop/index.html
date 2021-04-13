@@ -32,38 +32,44 @@
       
       
     </header>
-    <div class="container">
+    <div class="calendar- container">
       <!-- Timeblocks go here -->
-      <div class="m-5 row justify-content-around">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+        <h2 class="date"></h2>
+        <div class="calendar">
+          <div class="empty"></div>
+            <div class="planes">
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+            </div>
+          </div>
+          <div class="times">
+            <div class="row row-1">8 AM</div>
+            <div class="row row-1">9 AM</div>
+            <div class="row row-1">10 AM</div>
+            <div class="row row-1">11 AM</div>
+            <div class="row row-1">12 AM</div>
+            <div class="row row-1">1 PM</div>
+            <div class="row row-1">2 PM</div>
+            <div class="row row-1">4 PM</div>
+            <div class="row row-1">5 PM</div>
+          </div>
+          <div class="content">
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+            <div id="4"></div>
+            <div id="5"></div>
+            <div id="6"></div>
+          </div>
+
+        </div>
     </div>
     <script src="calendar.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
