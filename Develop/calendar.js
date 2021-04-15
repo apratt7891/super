@@ -2,9 +2,6 @@ document.getElementById("currentDay").innerHTML =
  Date();
 
 
+var btn = window.document.querySelector("button");
+console.dir(btn);
 
-document.querySelector('saveBtn').addEventListener("click", addEvent);
-
-function addEvent() {
-    alert('you clicked me')
-}
