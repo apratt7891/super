@@ -1,12 +1,12 @@
 
-  
+  /* Body style */
   body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
   color: #ff6961;
 }
-
+/* add style to text block */
 textarea{
   background: transparent;
   border: none;
@@ -15,7 +15,7 @@ textarea{
   border-left: 1px solid black;
   padding: 10px;
 }
-
+/* add style to Header */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -23,7 +23,7 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
+/* add style to calendar*/
 .description{
   white-space: pre-wrap;
   background-color: grey;
@@ -39,7 +39,7 @@ textarea{
   height: 80px;
   border-top: 1px solid white;;
 }
-
+/* add color to times */
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -60,7 +60,7 @@ textarea{
   background-color: #77dd77;
   color: white;
 }
-
+/*add styles to button*/
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -73,6 +73,9 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
-
-
+/* add style to footer tag */
+footer {
+  text-align: center;
+  color: #000000;
+}
 
