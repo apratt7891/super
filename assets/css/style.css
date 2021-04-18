@@ -1,6 +1,6 @@
 
   /* Body style */
-  body {
+body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -9,11 +9,18 @@
 /* add style to text block */
 textarea{
   background: transparent;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   border: none;
   resize: none;
-  color: #000000;
+  color: rgb(51, 98, 139);
   border-left: 1px solid black;
   padding: 10px;
+}
+img {
+  float: left;
+  width: 30%; 
+  margin-right: 50px;
+  margin-top: 20px;
 }
 /* add style to Header */
 .jumbotron {
@@ -26,7 +33,7 @@ textarea{
 /* add style to calendar*/
 .description{
   white-space: pre-wrap;
-  background-color: grey;
+  background-color:rgb(160, 202, 160);
 }
 
 .time-block{
@@ -44,6 +51,7 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  color: #f0b7b4;
 }
 
 .past {
