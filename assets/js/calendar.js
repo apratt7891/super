@@ -1,5 +1,7 @@
-document.getElementById("currentDay").innerHTML =
- Date();
+
+/* using moment.js to get todays date*/
+var todayDate = moment().format('dddd, MMM Do YYYY');
+$("#currentDay").html(todayDate);
 
 
  /* Using JQuery to get text/time data that will save when clicking on saveBtn */
@@ -13,7 +15,32 @@ document.getElementById("currentDay").innerHTML =
         /* Save text in local storage */
         localStorage.setItem(time, text);
     })
-   
+    function plannerTimer() {
+        /* current time*/
+        var currentTime = moment().hours();
+    
+        /* if/else statements to determine time*/
+        $(".time-block").each(function () {
+            var timeCal = parseInt($(this).attr("id").split("hour")[1]);
+    
+            // Add and remove classes depending on time
+            if (timeCal  < currentTime) {
+              $(this).addClass("past");
+              $(this).removeClass("future");
+              $(this).removeClass("present");
+            }
+            else if (timeCal  === currentTime) {
+              $(this).removeClass("past");
+              $(this).addClass("present");
+              $(this).removeClass("future");
+            }
+            else {
+                $(this).removeClass("present");
+                $(this).removeClass("past");
+                $(this).addClass("future");
+            }
+          })
+      }
 
 
     /* Get text from local storage */
@@ -28,5 +55,5 @@ document.getElementById("currentDay").innerHTML =
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
 
-   
+ plannerTimer();  
 })
